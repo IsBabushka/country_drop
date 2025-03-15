@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Font Awesome (for the icons) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+        <title>Country Drop</title>
+        <link rel="icon" type="image/x-icon" href="Images/img01_logo.png">
+    </head>
+    <body style="background-color: #f6f7ff;">
+        <!-- video bg and navbar container -->
+        <div class="video-navbar-container">
+            <video src="Images/vid1.mp4" autoplay muted loop class="video-bg"></video>
+
+            <!-- Navbar with Bootstrap dropdown -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">            
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/img01_logo.png" alt="Logo" style="width: 200px; height: auto; padding: 3%;">
+                </a>
+                <ul class="navbar-nav ms-auto" style="float: right; padding: 1%;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff; font-size: 4rem; font-weight: bold; text-decoration: none;">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home</a></li>
+                            <li><a class="dropdown-item" href="page2.html">Products</a></li>
+                            <li><a class="dropdown-item" href="page3.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="page4.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="page5.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- text in the vid -->
+            <div class="middle-div">
+                <h1 style="color: #ffffff; font-size: 10rem; font-weight: bold; margin-top: 20vh; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)">
+                    Pure and clean in every drop
+                </h1>
+                <p style="color: #ffffff; font-size: 3rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)">
+                    Mineral | Purified | Alkaline Water
+                </p>    
+            </div>
+
+            <!-- section divider, uses a curved sectdiv -->
+            <div class="curved-divider-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" style="transform: scale(1, -1);">
+                    <path d="M1000 100C500 100 500 4 0 4V0h1000v100Z" fill="#034c7e"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <section class="hero-section flex" style="padding-bottom: 10vh; width: 100%; margin: 0">
+                <div class="middle-div flex" style="padding-top: 3%;">
+                    <!-- special offer -->
+                    <div style="width: 50%;">
+                        <h2 style="font-size: 8rem; color: white; margin-bottom: 9%; font-weight: bold;">
+                            Special Offer
+                        </h2>
+                        <!-- divider -->
+                        
+                        <!-- subheader -->
+                        <p style="font-size: 8rem; color: white;">
+                            Get <b>4+1 Free Refill</b> on any water type!
+                        </p>
+                        <a href="page2.html"><button type="button" class="btn btn-light" style="font-size: 1.5rem; margin-top: 5%; padding: 1% 5%; border-radius: 20px; color: #035389;"><b>Learn More</b></button></a>
+                    </div>
+
+                    <img src="Images/containers/img01.png" alt="containers" usemap="#image-map">
+                    
+
+
+                </div>
+        </section>
+
+        <!-- our premium water options -->
+        <section class="middle-div" style="padding-bottom: 8vh;">
+            <!-- header and divider, #035389 -->
+            <div style="margin-top: 10vh;">
+                <h2 style="font-size: 8rem; color: #035389;">
+                    Our Premium Water Options
+                </h2>
+                <div style="width: 25%; height:2px; background-color: #035389; margin-top: 3%;">
+                </div>
+            </div>
+
+            <!-- box container -->
+            <div class="flex" style="margin-top: 10vh;">
+                <!-- box 1 -->
+                <div class="premium-water-box">
+                    <div style="padding: 3% 0 3% 5%; background-color: #035389; width: 70%">
+                        <p class="white-text" style="font-size: 2.5rem; font-weight: bold;">Purified Water</p>
+                        <p class="white-text" style="font-size: 2rem;">₱ 25.00 / Refill</p>
+                    </div>
+                    <div class="blue-text" style="padding: 5% 5% 0 5%; font-size: 2rem;">
+                        <p>
+                            Perfect for everyday hydration, purified through our rigorous 31-stage process.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- box 2 -->
+                <div class="premium-water-box">
+                    <div style="padding: 3% 0 3% 5%; background-color: #035389; width: 70%">
+                        <p class="white-text" style="font-size: 2.5rem; font-weight: bold;">Mineral Water</p>
+                        <p class="white-text" style="font-size: 2rem;">₱ 25.00 / Refill</p>
+                    </div>
+                    <div class="blue-text" style="padding: 5% 5% 0 5%; font-size: 2rem;">
+                        <p>
+                            Enriched with essential minerals for better health.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- box 3 -->
+                <div class="premium-water-box">
+                    <div style="padding: 3% 0 3% 5%; background-color: #035389; width: 70%">
+                        <p class="white-text" style="font-size: 2.5rem; font-weight: bold;">Alkaline Water</p>
+                        <p class="white-text" style="font-size: 2rem;">₱ 30.00 / Refill</p>
+                    </div>
+                    <div class="blue-text" style="padding: 5% 5% 0 5%; font-size: 2rem;">
+                        <p>
+                            Balances pH levels and supports overall wellness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- image map -->
+        <map name="image-map">
+            <area title="Purified Water" href="page2.html#productSection1" coords="244,479,233,460,223,396,197,214,187,197,187,181,174,176,163,162,146,154,124,160,107,170,95,173,78,156,72,145,66,134,59,122,16,144,30,163,37,177,47,195,46,205,41,214,19,228,8,241,10,257,15,265,13,277,16,289,29,296,37,310,37,321,47,329,54,341,70,366,101,418,124,447,135,471,145,485,153,494,165,501,185,506,237,485,240,483" shape="poly">
+            <area title="Alkaline Water" href="page2.html#productSection3" coords="534,72,519,48,487,24,461,14,415,11,350,21,341,32,329,28,270,33,199,41,199,60,201,67,205,73,201,81,187,90,185,142,198,214,219,366,234,461,246,481,283,504,311,501,330,500,341,505,356,509,453,467,502,138,512,105,519,88,533,83" shape="poly">
+            <area title="Mineral Water" href="page2.html#productSection2" coords="539,65,542,41,587,39,634,51,667,63,669,80,669,90,677,90,700,94,731,103,755,109,770,110,781,117,800,139,811,157,821,171,828,186,826,219,803,373,784,479,781,506,767,517,741,520,705,523,664,525,616,530,585,532,567,532,546,521,533,517,511,517,492,510,473,499,455,479,453,460,501,149,520,90,538,85" shape="poly">
+        </map>
+
+        <!-- footer -->
+        <footer class="flex" style="margin-top: 20vh; justify-content: space-around; background-color: #035389; padding: 3%;">
+            <!-- sitemap -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Sitemap</h4>
+                <div style="display: flex; justify-content: left;">
+                    <ul style="list-style: none; padding: 0; margin-right: 10%;">
+                        <li><a href="page1.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Home</a></li>
+                        <li><a href="page2.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Products</a></li>
+                        <li><a href="page3.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Gallery</a></li>
+                    </ul>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="page4.html" class="white-text" style="text-decoration: none; font-size: 2rem;">About Us</a></li>
+                        <li><a href="page5.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- location -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Location</h4>
+                <p class="white-text" style="font-size: 2rem;">B42 L39 Zamora St., Town and Country West, Molino III, Bacoor, Cavite</p>
+            </div>
+            <!-- contact info -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Contact Information</h4>
+                <p class="white-text" style="font-size: 2rem;">0908 817 2468 / 0915 065 0106</p>
+                <p class="white-text" style="font-size: 2rem;">countrydrop0902@gmail.com</p>
+            </div>
+            <!-- developed by -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Developed By</h4>
+                <p class="white-text" style="font-size: 2rem;">Allen S. Quilatan</p>
+            </div>
+            <!-- image -->
+            <div style="width: 20%;">
+                <a href="#"><img src="Images/img01_logo.png" alt="Logo" style="width: 100%; height: auto;"></a>
+            </div>
+        </footer>
+        
+    </body>
+</html>

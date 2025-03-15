@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Font Awesome (for the icons) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+        <title>Contact Us - Country Drop</title>
+        <link rel="icon" type="image/x-icon" href="Images/img01_logo.png">
+    </head>
+    <body style="background-color: #f6f7ff;">
+        <!-- video bg and navbar container -->
+        <div class="video-navbar-container">
+            <video src="Images/vid1.mp4" autoplay muted loop class="video-bg"></video>
+
+            <!-- Navbar with Bootstrap dropdown -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">            
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/img01_logo.png" alt="Logo" style="width: 200px; height: auto; padding: 3%;">
+                </a>
+                <ul class="navbar-nav ms-auto" style="float: right; padding: 1%;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff; font-size: 4rem; font-weight: bold; text-decoration: none;">
+                            Contact us
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="page2.html">Products</a></li>
+                            <li><a class="dropdown-item" href="page3.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="page4.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- text in the vid -->
+            <div class="middle-div">
+                <h1 style="color: #ffffff; font-size: 10rem; font-weight: bold; margin-top: 20vh; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)">
+                    Get in touch with Country Drop
+                </h1>
+            </div>
+        </div>
+
+        <section class="middle-div" style="margin-top: 10vh; margin-bottom: 10vh;">
+            <!-- Header -->
+            <h2 class="blue-text" style="font-size: 6rem; font-weight: bold; margin-bottom: 5%;">We’d Love to Hear from You!</h2>
+
+            <!-- Row for Form and Contact Info -->
+            <div class="flex">
+                <!-- Form -->
+                <div style="background-color: #ffffff; border-radius: 20px; padding: 5%; width: 45%; border: 1px solid #000; height: 60vh;">
+                    <form action="mailto:countrydrop0902@gmail.com" method="POST" >
+                        <!-- Name Section, includes first, mid, and last -->
+                        <div class="flex" style="margin-bottom: 3%;">
+                            <!-- first name -->
+                            <div style="width: 40%;">
+                                <label for="firstName" class="form-desc">First Name</label><br>
+                                <input type="text" id="firstName" name="firstName">
+                            </div>
+
+                            <!-- middle name -->
+                            <div style="width: 15%;">
+                                <label for="middleInitial" class="form-desc">M.I.</label><br>
+                                <input type="text" id="middleInitial" name="middleInitial">
+                            </div>
+
+                            <!-- last name -->
+                            <div style="width: 40%;">
+                                <label for="lastName" class="form-desc">Last Name</label><br>
+                                <input type="text" id="lastName" name="lastName">
+                            </div>
+                        </div>
+
+                        <!-- Email and Phone num section -->
+                        <div class="flex" style="margin-bottom: 3%;">
+
+                            <!-- Email -->
+                            <div style="width: 50%;">
+                                <label for="email" class="form-desc">Email</label><br>
+                                <input type="email" id="email" name="email">
+                            </div>
+
+                            <!-- phone number -->
+                            <div style="width: 50%;">
+                                <label for="phoneNumber" class="form-desc">Phone Number</label><br>
+                                <input type="number" id="phoneNumber" name="phoneNumber">
+                            </div>
+                        </div>
+
+                        <!-- Inquiry section, uses select -->
+                        <div class="flex" style="margin-bottom: 3%;">
+                            <div style="width: 100%;">
+                                <label for="inquiryType" class="form-desc">Inquiry Type</label>
+                                <select id="inquiryType" name="inquiryType" style="width: 50%; height: 5vh; border: 1px solid #035389; border-radius: 10px; padding: 1%; margin-left: 5%;">
+                                    <option value="orderInquiry">Order Inquiry</option>
+                                    <option value="waterTypesPricing">Water Types and Pricing</option>
+                                    <option value="deliveryRequest">Delivery Request</option>
+                                    <option value="feedbackSuggestions">Feedback or Suggestions</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Your message section -->
+                        <div style="margin-bottom: 3%;">
+                            <label for="message" class="form-desc">Your Message</label><br>
+                            <textarea id="message" name="message" rows="5" style="width: 95%; border: 1px solid #035389; border-radius: 10px; padding: 1%;"></textarea>
+                        </div>
+                        <!-- Submit Button with some bootstrap elements -->
+                        <button type="submit" class="btn" style="background-color: #035389; color: #ffffff; font-size: 1.5rem; margin-top: 5%; padding: 1% 5%; border-radius: 20px; "><b>Submit</b></button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div style="width: 45%; padding: 5%; border-radius: 20px; background-color: #ffffff; border: 1px solid #000">
+
+                    <!-- Address -->
+                    <div class="flex" style="margin-bottom: 3%;">
+
+                        <!-- Used font awesome address icon -->
+                        <div style="width: 20%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-location-dot" style="font-size: 3rem; color: #035389;"></i>
+                        </div>
+
+                        <!-- address text -->
+                        <div style="width: 80%; display: flex; align-items: center;">
+                            <p class="blue-text" style="font-size: 2rem;">B42 L39 Zamora St., Town and Country West, Molino III, Bacoor, Cavite</p>
+                        </div>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="flex" style="margin-bottom: 3%;">
+
+                        <!-- Used font awesome phone icon -->
+                        <div style="width: 20%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-phone" style="font-size: 3rem; color: #035389;"></i>
+                        </div>
+
+                        <!-- phone num -->
+                        <div style="width: 80%; display: flex; align-items: center;">
+                            <p class="blue-text" style="font-size: 2rem;">0908 817 2468 / 0915 065 0106</p>
+                        </div>
+                    </div>
+
+                    <!-- Email  -->
+                    <div class="flex" style="margin-bottom: 3%;">
+
+                        <!-- Used font awesome email icon -->
+                        <div style="width: 20%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-envelope" style="font-size: 3rem; color: #035389;"></i>
+                        </div>
+
+                        <!-- email text -->
+                        <div style="width: 80%; display: flex; align-items: center;">
+                            <p class="blue-text" style="font-size: 2rem;">countrydrop0902@gmail.com</p>
+                        </div>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d341.5853367105486!2d120.98586058382432!3d14.392717410214052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTTCsDIzJzM0LjAiTiAxMjDCsDU5JzA5LjQiRQ!5e0!3m2!1sen!2sph!4v1741975710333!5m2!1sen!2sph" width="600" height="450" style="border:0; width: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <footer class="flex" style="margin-top: 20vh; justify-content: space-around; background-color: #035389; padding: 3%;">
+            <!-- sitemap -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Sitemap</h4>
+                <div style="display: flex; justify-content: left;">
+                    <ul style="list-style: none; padding: 0; margin-right: 10%;">
+                        <li><a href="index.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Home</a></li>
+                        <li><a href="page2.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Products</a></li>
+                        <li><a href="page3.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Gallery</a></li>
+                    </ul>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="page4.html" class="white-text" style="text-decoration: none; font-size: 2rem;">About Us</a></li>
+                        <li><a href="page5.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- location -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Location</h4>
+                <p class="white-text" style="font-size: 2rem;">B42 L39 Zamora St., Town and Country West, Molino III, Bacoor, Cavite</p>
+            </div>
+            <!-- contact info -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Contact Information</h4>
+                <p class="white-text" style="font-size: 2rem;">0908 817 2468 / 0915 065 0106</p>
+                <p class="white-text" style="font-size: 2rem;">countrydrop0902@gmail.com</p>
+            </div>
+            <!-- developed by -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Developed By</h4>
+                <p class="white-text" style="font-size: 2rem;">Allen S. Quilatan</p>
+            </div>
+            <!-- image -->
+            <div style="width: 20%;">
+                <a href="page1.html"><img src="Images/img01_logo.png" alt="Logo" style="width: 100%; height: auto;"></a>
+            </div>
+        </footer>
+        
+    </body>
+</html>

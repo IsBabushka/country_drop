@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Font Awesome (for the icons) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+        <title>Products - Country Drop</title>
+        <link rel="icon" type="image/x-icon" href="Images/img01_logo.png">
+    </head>
+    <body style="background-color: #f6f7ff;">
+        <!-- video bg and navbar container -->
+        <div class="video-navbar-container">
+            <video src="Images/vid1.mp4" autoplay muted loop class="video-bg"></video>
+
+            <!-- Navbar with Bootstrap dropdown -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">            
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/img01_logo.png" alt="Logo" style="width: 200px; height: auto; padding: 3%;">
+                </a>
+                <ul class="navbar-nav ms-auto" style="float: right; padding: 1%;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ffffff; font-size: 4rem; font-weight: bold; text-decoration: none;">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="#">Products</a></li>
+                            <li><a class="dropdown-item" href="page3.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="page4.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="page5.html">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- text in the vid -->
+            <div class="middle-div">
+                <h1 style="color: #ffffff; font-size: 10rem; font-weight: bold; margin-top: 20vh; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)">
+                    Our Premium Water Services
+                </h1>
+            </div>
+        </div>
+
+        <!-- product section 1 -->
+        <div style="background-color: #035389;"> 
+            <section id="productSection1" class="flex product-section" style="background-image: url('Images/backgrounds/img05_background.PNG'); margin-top: -15%; background-repeat: no-repeat;">
+                <div style="width: 50%; padding-right: 5%;">
+                    <div class="product-text-container" style="color: #034c7e;">
+                        <h2 class="product-text">Purified Water</h2>
+                    </div>
+                    <p class="product-price">₱25.00 / Refill</p>
+                    <div class="benefits-container" style="margin-left: 15%;">
+                        <h3 class="off-white-text" style="font-size: 4rem;">Benefits</h3>
+                        <ul class="off-white-text" style="font-size: 3rem; list-style-type: disc; padding-left: 10%;">
+                            <li>Safe for drinking</li>
+                            <li>Ideal for households and offices</li>
+                            <li>Affordable and reliable</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- product section 2, div float to right -->
+        <div style="background-color: #005a96;">
+            <section id="productSection2" class="flex product-section-right" style="background-image: url('Images/backgrounds/img06_background.PNG'); margin-top: -15%; background-repeat: no-repeat;">
+                <!-- for left spacing -->
+                <div style="width: 50%"></div>
+                <!-- content -->
+                <div style="width: 50%; padding-right: 5; float: right;">
+                    <!-- aligns header and price to the right, and pads from there -->
+                    <div style="text-align: right; padding-left: 15%;">
+                        <div class="product-text-container" style="color: #034c7e; float: right; margin-right: 0;">
+                            <h2 class="product-text">Mineral Water</h2>
+                        </div>
+                        <div>
+                            <p class="product-price" style="text-align: right;">₱25.00 / Refill</p>
+                        </div>
+                    </div>    
+                    
+                    <!-- benefits container -->
+                    <div class="benefits-container" style="margin-right: 15%;">
+                        <h3 class="off-white-text" style="font-size: 4rem;">Benefits</h3>
+                        <ul class="off-white-text" style="font-size: 3rem; list-style-type: disc; padding-left: 10%;">
+                            <li>Boosts overall wellness</li>
+                            <li>Improves bone and muscle health</li>
+                            <li>Great for athletes and active individuals</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- product section 3 -->
+        <div style="background-color: #0064a6;"> 
+            <section id="productSection3" class="flex product-section" style="background-image: url('Images/backgrounds/img07_background.PNG'); margin-top: -15%; background-repeat: no-repeat;">
+                <div style="width: 50%; padding-right: 5%;">
+                    <div class="product-text-container" style="color: #034c7e;">
+                        <h2 class="product-text">Alkaline Water</h2>
+                    </div>
+                    <p class="product-price">₱30.00 / Refill</p>
+                    <div class="benefits-container" style="margin-left: 15%;">
+                        <h3 class="off-white-text" style="font-size: 4rem;">Benefits</h3>
+                        <ul class="off-white-text" style="font-size: 3rem; list-style-type: disc; padding-left: 10%;">
+                            <li>Neutralizes acidity</li>
+                            <li>Supports immune system function</li>
+                            <li>Enhances hydration</li>
+                        </ul>
+                    </div>
+                </div>
+            </section> 
+        </div>
+
+        <!-- comparison section -->
+        <div style="background-color: #f6f7ff; padding: 5%; margin-top: -15%;">
+            <h2 class="blue-text" style="text-align: center; font-size: 5rem; font-weight: bold;">Compare Our Options</h2>
+            <table style="width: 100%; border-collapse: collapse; border: 2px solid #FFFFFF; background-color: #005a96; margin-top: 2%;">
+                <tr>
+                    <th style="padding: 2%; border: 2px solid #FFFFFF;">Type of Water</th>
+                    <th style="padding: 2%; border: 2px solid #FFFFFF;">Key Features</th>
+                    <th style="padding: 2%; border: 2px solid #FFFFFF;">Price</th>
+                </tr>
+                <tr style="border: 2px solid #FFFFFF;">
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">Purified Water</td>
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">Perfect for everyday hydration, free from impurities.</td>
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">₱25.00 / Refill</td>
+                </tr>
+                <tr style="border: 2px solid #FFFFFF;">
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">Mineral Water</td>
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">Enriched with essential minerals like calcium and magnesium.</td>
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">₱25.00 / Refill</td>
+                </tr>
+                <tr style="border: 2px solid #FFFFFF;">
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">Alkaline Water</td>
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">Balances pH levels, supports better digestion and wellness.</td>
+                    <td style="padding: 2%; border: 2px solid #FFFFFF;">₱30.00 / Refill</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- footer -->
+        <footer class="flex" style="margin-top: 20vh; justify-content: space-around; background-color: #035389; padding: 3%;">
+            <!-- sitemap -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Sitemap</h4>
+                <div style="display: flex; justify-content: left;">
+                    <ul style="list-style: none; padding: 0; margin-right: 10%;">
+                        <li><a href="index.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Home</a></li>
+                        <li><a href="page2.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Products</a></li>
+                        <li><a href="page3.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Gallery</a></li>
+                    </ul>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="page4.html" class="white-text" style="text-decoration: none; font-size: 2rem;">About Us</a></li>
+                        <li><a href="page5.html" class="white-text" style="text-decoration: none; font-size: 2rem;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- location -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Location</h4>
+                <p class="white-text" style="font-size: 2rem;">B42 L39 Zamora St., Town and Country West, Molino III, Bacoor, Cavite</p>
+            </div>
+            <!-- contact info -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Contact Information</h4>
+                <p class="white-text" style="font-size: 2rem;">0908 817 2468 / 0915 065 0106</p>
+                <p class="white-text" style="font-size: 2rem;">countrydrop0902@gmail.com</p>
+            </div>
+            <!-- developed by -->
+            <div style="width: 20%;">
+                <h4 class="white-text" style="font-size: 2rem; font-weight: bold;">Developed By</h4>
+                <p class="white-text" style="font-size: 2rem;">Allen S. Quilatan</p>
+            </div>
+            <!-- image -->
+            <div style="width: 20%;">
+                <a href="page1.html"><img src="Images/img01_logo.png" alt="Logo" style="width: 100%; height: auto;"></a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
